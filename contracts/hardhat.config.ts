@@ -28,6 +28,9 @@ const config: HardhatUserConfig = {
       chainId: 11155111
     }
   },
+  sourcify: {
+    enabled: true
+  },
   paths: {
     sources: "./contracts",
     tests: "./test",

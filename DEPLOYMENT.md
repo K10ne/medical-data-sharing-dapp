@@ -12,6 +12,18 @@
 | MedicalDataRegistry | `0x037601068F0aAC93FbDb631c746D5f347C999661` |
 | ConsentAccessControl | `0xFC96D31921Ea9477B5dC923912e4655f7e5C693f` |
 
+## 源码验证
+
+三个合约已经在 Sourcify 上完成 `full_match` 源码验证：
+
+| 合约 | Sourcify |
+| --- | --- |
+| IdentityRegistry | https://repo.sourcify.dev/contracts/full_match/11155111/0xe6DF2a398A09c0C0ED23CEF4219322060c35C090/ |
+| MedicalDataRegistry | https://repo.sourcify.dev/contracts/full_match/11155111/0x037601068F0aAC93FbDb631c746D5f347C999661/ |
+| ConsentAccessControl | https://repo.sourcify.dev/contracts/full_match/11155111/0xFC96D31921Ea9477B5dC923912e4655f7e5C693f/ |
+
+Etherscan 验证需要 `ETHERSCAN_API_KEY`。当前项目已完成 Sourcify 开源验证；如需 Etherscan 页面显示绿色 Verified 标识，可配置 API Key 后再执行 `hardhat verify`。
+
 ## 本地启动
 
 ```powershell
