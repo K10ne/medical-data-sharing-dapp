@@ -1,0 +1,22 @@
+{
+  "name": "medical-data-sharing-dapp",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A privacy-preserving Ethereum DApp for medical data sharing.",
+  "scripts": {
+    "dev:web": "npm --workspace apps/web run dev",
+    "dev:api": "npm --workspace apps/api run dev",
+    "dev:chain": "npm --workspace contracts run node",
+    "deploy:local": "npm --workspace contracts run deploy:local",
+    "build": "npm --workspaces run build",
+    "test": "npm --workspaces --if-present run test"
+  },
+  "workspaces": [
+    "apps/web",
+    "apps/api",
+    "contracts"
+  ],
+  "engines": {
+    "node": ">=20"
+  }
+}
